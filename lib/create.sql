@@ -2,9 +2,9 @@ CREATE TABLE projects (
   id INTEGER PRIMARY KEY,
   title TEXT,
   category TEXT,
-  funding_goal INTEGER,
-  start_date INTEGER,
-  end_date INTEGER
+  funding_goal REAL,
+  start_date TEXT,
+  end_date TEXT
 );
 
 CREATE TABLE users (
@@ -15,7 +15,7 @@ CREATE TABLE users (
 
 CREATE TABLE pledges (
   id INTEGER PRIMARY KEY,
-  amount INTEGER,
+  amount REAL,
   user_id INTEGER,
-  project_ID INTEGER
+  project_id INTEGER
 );
