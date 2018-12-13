@@ -11,8 +11,7 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
 FROM projects
 JOIN pledges
 ON pledges.project_id = projects.id
-GROUP BY pledges.project_id
-ORDER BY projects.title"
+GROUP BY projects.title"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
@@ -20,8 +19,7 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
 FROM users
 JOIN pledges
 ON pledges.user_id = users.id
-GROUP BY pledges.user_id
-ORDER BY users.name"
+GROUP BY users.name"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
@@ -44,7 +42,7 @@ ORDER BY SUM(pledges.amount)"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-"SELECT projects.category, (pledges.amount)
+"SELECT projects.category, pledges.amount
 FROM projects
 JOIN pledges
 on pledges.project_id = projects.id
