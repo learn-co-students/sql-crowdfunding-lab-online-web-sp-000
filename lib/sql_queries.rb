@@ -7,25 +7,26 @@
 # Make sure each ruby method returns a string containing a valid SQL statement.
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
-"Write your SQL query Here"
+"SELECT title, pledged_amount from projects INNER JOIN (SELECT project_id, SUM(amount) as pledged_amount FROM pledges GROUP BY project_id) ON projects.id = project_id ORDER BY title;"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
-"Write your SQL query Here"
+"SELECT name, age, pledged_amount from users INNER JOIN (SELECT user_id, SUM(amount) as pledged_amount FROM pledges GROUP BY user_id) ON users.id = user_id ORDER BY name;"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-"Write your SQL query Here"
+  "SELECT title, (pledged_amount - funding_goal) from projects INNER JOIN (SELECT project_id, SUM(amount) as pledged_amount FROM pledges GROUP BY project_id) ON projects.id = project_id WHERE funding_goal <= pledged_amount ORDER BY title;"
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
-"Write your SQL query Here"
+  "SELECT name, pledged_amount from users INNER JOIN (SELECT user_id, SUM(amount) as pledged_amount FROM pledges GROUP BY user_id) ON users.id = user_id ORDER BY pledged_amount, name;"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-"Write your SQL query Here"
+  "SELECT category, pledged_amount from projects INNER JOIN (SELECT project_id, amount as pledged_amount FROM pledges) ON projects.id = project_id WHERE category='music';"
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
-"Write your SQL query Here"
+  "SELECT category, SUM(pledged_amount) FROM (SELECT category, pledged_amount from projects INNER JOIN (SELECT project_id, SUM(amount) as pledged_amount FROM pledges GROUP BY project_id) ON projects.id = project_id WHERE category='books');"
+
 end
