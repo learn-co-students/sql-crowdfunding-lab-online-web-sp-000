@@ -1,4 +1,4 @@
-# Crowdfunding SQL
+l# Crowdfunding SQL
 
 ## Objectives
 Learn to create tables, insert data, and use `JOIN`s to answer the questions.
