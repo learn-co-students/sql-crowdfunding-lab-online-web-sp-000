@@ -1,0 +1,10 @@
+INSERT INTO projects VALUES (1, "New SCC C-Fund", "Sports", 35808, 01012019, 03042019);
+INSERT INTO projects VALUES (2, "New SCC A-Fund", "Sports", 35807, 01012019, 03042020);
+INSERT INTO projects VALUES (3, "New SCC B-Fund", "Sports", 25807, 01012019, 04042019);
+INSERT INTO projects VALUES (4, "Restaurant Startup A", "General", 2808500500, 02052019, 04022019);
+INSERT INTO projects VALUES (5, "Restaurant Startup B", "General B", 3808500500, 02052019, 04022019);
+INSERT INTO projects VALUES (6, "Restaurant Startup C", "General C", 1808500500, 02052019, 04022019);
+INSERT INTO projects VALUES (7, "Restaurant Startup D", "General D", 808500500, 02052019, 04022019);
+INSERT INTO projects VALUES (8, "New NH", "Healthcare A", 500000, 03082019, 08062025);
+INSERT INTO projects VALUES (9, "New NH", "Healthcare B", 1500000, 02082019, 08062025);
+INSERT INTO projects VALUES (10, "New NH", "Healthcare C", 2500000, 01082019, 08062025);
