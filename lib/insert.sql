@@ -30,7 +30,6 @@ INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) V
 INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES (9, "Zd", "pol", 101, 1988, 2001);
 INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES (10, "Va", "suma", 140, 1967, 2020);
 
-
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES (1, 122, 3, 1);
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES (2, 112, 1, 3);
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES (3, 222, 2, 2);
