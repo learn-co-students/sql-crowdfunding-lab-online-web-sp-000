@@ -15,23 +15,20 @@ def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-  #For projects that met their goal, how did they do?
-  "SELECT projects.title, (SELECT SUM(pledges.amount) FROM pledges) - (SELECT SUM(projects.funding_goal) FROM projects) JOIN projects ON projects.id = pledges.project_id 
-  "
-#JOIN pledges ON projects.id = pledges.project_id WHERE pledges.amount >= projects.funding_goal
+  "SELECT projects.title, (SUM(pledges.amount) - projects.funding_goal) AS remaining_amount FROM projects JOIN pledges ON projects.id = pledges.project_id GROUP BY projects.title HAVING remaining_amount >= 0"
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_summed_amount
   #How much did each user pledge total?
-  "Write your SQL query Here"
+  "SELECT users.name, SUM(pledges.amount) AS summed_amount FROM users JOIN pledges on users.id = pledges.user_id GROUP BY users.name ORDER BY summed_amount ASC"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
   #Who pledged and how much was pledged in music?
-  "Write your SQL query Here"
+  "SELECT projects.category, pledges.amount FROM projects JOIN pledges ON pledges.project_id = projects.id WHERE projects.category = 'music'"
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
   #Who pledged and how much in books category?
-  "Write your SQL query Here"
+  "SELECT projects.category, SUM(pledges.amount) FROM projects JOIN pledges ON pledges.project_id = projects.id WHERE projects.category = 'books'"
 end
