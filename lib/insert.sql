@@ -6,15 +6,15 @@ INSERT INTO users (id, name, age) VALUES (1, 'Mike', 20), (2, 'Sara', 21), (3, '
 
 INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES
 (1, 'Help me buy a guitar', 'music', 500.00, '2019-06-30', '2019-07-30'),
-(2, 'Buy a car', 'music', 20000.00, '2019-07-30', '2019-08-30'),
-(3, 'Pay student loan', 'music', 2500.00, '2019-08-30', '2019-09-30'),
-(4, 'Vacation to Florida', 'music', 2000.00, '2019-09-30', '2020-10-30'),
-(5, 'Buy a new hockey stick', 'music', 100.00, '2019-10-30', '2020-11-30'),
-(6, 'Dinner for alum ', 'music', 200.00, '2019-11-30', '2020-12-30'),
-(7, 'Buy a new computer', 'music', 1500.00, '2019-12-30', '2020-01-30'),
-(8, 'A new swingset for my kids', 'music', 500.00, '2020-01-30', '2020-02-30'),
-(9, 'A shed for all my stuff', 'music', 700.00, '2020-02-30', '2020-03-30'),
-(10, 'Subscription to WSJ', 'music', 400.00, '2020-03-30', '2020-04-30');
+(2, 'Buy a car', 'transportation', 20000.00, '2019-07-30', '2019-08-30'),
+(3, 'Pay student loan', 'education', 2500.00, '2019-08-30', '2019-09-30'),
+(4, 'Vacation to Florida', 'leisure', 2000.00, '2019-09-30', '2020-10-30'),
+(5, 'Buy a new hockey stick', 'sports', 100.00, '2019-10-30', '2020-11-30'),
+(6, 'Dinner for alum ', 'networking', 200.00, '2019-11-30', '2020-12-30'),
+(7, 'Buy a new computer', 'education', 1500.00, '2019-12-30', '2020-01-30'),
+(8, 'A new swingset for my kids', 'leisure', 500.00, '2020-01-30', '2020-02-30'),
+(9, 'A shed for all my stuff', 'storage', 700.00, '2020-02-30', '2020-03-30'),
+(10, 'Subscription to WSJ', 'education', 400.00, '2020-03-30', '2020-04-30');
 
 
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES
