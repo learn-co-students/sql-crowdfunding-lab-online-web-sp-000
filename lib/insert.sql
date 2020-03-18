@@ -2,11 +2,11 @@
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Green Earth Drive", "Environment", 100, "3/17/20", "3/17/21");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("For the Pupperinos", "Animals", 200, "1/15/20", "1/15/21");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Cookies for the Homeless", "Homeless", 150, "2/17/20", "2/17/21");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Books for Kids", "Kids", 250, "1/21/20", "1/21/21");
+INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Books for Kids", "Books", 250, "1/21/20", "1/21/21");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Stop Loneliness", "Elderly", 300, "2/11/20", "2/21/21");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Building Houses for Less Fortunate", "Homeless", 150, "6/20/19", "6/20/20");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Donuts for Depression", "Mental Health", 1000, "11/11/20", "11/11/21");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Urban Cleanup", "Environment", 50, "7/04/20", "7/04/21");
+INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Urban Tunes", "Music", 50, "7/04/20", "7/04/21");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Connecting through Pain", "Addiction", 400, "6/25/20", "6/25/21");
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Cleanup the Streets", "Crime", 700, "9/22/20", "9/22/21");
 
