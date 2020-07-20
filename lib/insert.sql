@@ -1,0 +1,66 @@
+
+INSERT INTO users VALUES (1, "Bob", 40);
+INSERT INTO users VALUES (2, "Sue", 41);
+INSERT INTO users VALUES (3, "Mary", 43);
+INSERT INTO users VALUES (4, "Joe", 44);
+INSERT INTO users VALUES (5, "Lucas", 57);
+INSERT INTO users VALUES (6, "Ernie", 27);
+INSERT INTO users VALUES (7, "Bert", 67);
+INSERT INTO users VALUES (8, "Robin", 47);
+INSERT INTO users VALUES (9, "Hood", 57);
+INSERT INTO users VALUES (10, "Larry", 44);
+INSERT INTO users VALUES (11, "David", 47);
+INSERT INTO users VALUES (12, "James", 41);
+INSERT INTO users VALUES (13, "Miriam", 40);
+INSERT INTO users VALUES (14, "Lucy", 38);
+INSERT INTO users VALUES (15, "Sarah", 27);
+INSERT INTO users VALUES (16, "Jane", 44);
+INSERT INTO users VALUES (17, "Ian", 37);
+INSERT INTO users VALUES (18, "Paul", 57);
+INSERT INTO users VALUES (19, "Shirley", 27);
+INSERT INTO users VALUES (20, "Sally", 47);
+
+INSERT INTO projects VALUES (1, "BLM", "Activism", 200000, 822, 823);
+INSERT INTO projects VALUES (2, "BaBIES", "Charity", 200000, 822, 823);
+INSERT INTO projects VALUES (3, "LAPTOP", "Education", 200000, 822, 823);
+INSERT INTO projects VALUES (4, "HELP", "Education", 200000, 822, 823);
+INSERT INTO projects VALUES (5, ("CLEAN", "Activism", 200000, 822, 823);
+INSERT INTO projects VALUES (6, "PUPS", "Animal Rights", 200000, 822, 823);
+INSERT INTO projects VALUES (7, "SELL", "E-commerce", 200000, 822, 823);
+INSERT INTO projects VALUES (8, "CATS", "Animal Rights", 200000, 822, 823);
+INSERT INTO projects VALUES (9, "RIGHTS", "Activism", 200000, 822, 823);
+INSERT INTO projects VALUES (10, "SCHOOL", "Education", 200000, 822, 823);
+
+INSERT INTO pledges VALUES (1, 30, 20, 10);
+INSERT INTO pledges VALUES (2, 30, 20, 10);
+INSERT INTO pledges VALUES (3, 30, 20, 10);
+INSERT INTO pledges VALUES (4, 30, 20, 10);
+INSERT INTO pledges VALUES (5, 30, 20, 10);
+INSERT INTO pledges VALUES (6, 30, 20, 10);
+INSERT INTO pledges VALUES (7, 30, 20, 10);
+INSERT INTO pledges VALUES (8, 30, 20, 10);
+INSERT INTO pledges VALUES (9, 30, 20, 10);
+INSERT INTO pledges VALUES (10, 30, 20, 10);
+INSERT INTO pledges VALUES (11, 30, 20, 10);
+INSERT INTO pledges VALUES (12, 30, 20, 10);
+INSERT INTO pledges VALUES (13, 30, 20, 10);
+INSERT INTO pledges VALUES (14, 30, 20, 10);
+INSERT INTO pledges VALUES (15, 30, 20, 10);
+INSERT INTO pledges VALUES (16, 30, 20, 10);
+INSERT INTO pledges VALUES (17, 30, 20, 10);
+INSERT INTO pledges VALUES (18, 30, 20, 10);
+INSERT INTO pledges VALUES (19, 30, 20, 10);
+INSERT INTO pledges VALUES (20, 30, 20, 10);
+INSERT INTO pledges VALUES (21, 30, 20, 10);
+INSERT INTO pledges VALUES (22, 30, 20, 10);
+INSERT INTO pledges VALUES (23, 30, 20, 10);
+INSERT INTO pledges VALUES (24, 30, 20, 10);
+INSERT INTO pledges VALUES (25, 30, 20, 10);
+INSERT INTO pledges VALUES (26, 30, 20, 10);
+INSERT INTO pledges VALUES (27, 30, 20, 10);
+INSERT INTO pledges VALUES (28, 30, 20, 10);
+INSERT INTO pledges VALUES (29, 30, 20, 10);
+INSERT INTO pledges VALUES (30, 30, 20, 10);
+
+
+
