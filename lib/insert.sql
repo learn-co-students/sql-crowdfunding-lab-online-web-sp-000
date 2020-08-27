@@ -1,0 +1,8 @@
+INSERT INTO users (name, age) VALUES ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), 
+("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31), ("Carrie", 31);
+
+/*INSERT INTO projects - has 10 projects*/
+INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow"), ("project", "educational", 500, "today", "tomorrow");
+
+/*INSERT INTO pledges - has 30 pledges*/
+INSERT INTO pledges (amount, user_id, project_id) VALUES (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5),(400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5),(400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5), (400, 1, 5);
