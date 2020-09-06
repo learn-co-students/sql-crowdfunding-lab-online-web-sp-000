@@ -1,4 +1,3 @@
-
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
   "SELECT projects.title, SUM(pledges.amount) 
   FROM projects
@@ -45,5 +44,5 @@ def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_b
   FROM projects
   INNER JOIN pledges
   ON projects.id = project_id
-  HAVING projects.category = 'books';"
+  GROUP BY projects.category HAVING projects.category = 'books';"
 end
