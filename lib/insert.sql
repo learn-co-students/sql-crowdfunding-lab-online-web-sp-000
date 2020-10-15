@@ -4,15 +4,15 @@ INSERT INTO users (name, age) VALUES ('Morgan', 31), ('Jenn', 30), ('Milo', 33),
 ('Angela', 35);
 
 INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES
-(1, 'Help buy equiptment for props', 'music', 200.00, '2019-05-01', '2019-06-01')
-(2, 'Help local band make video', 'music', 500.00, '2020-09-01', '2020-10-01')
-(3, 'Music students need mics', 'music', 1000.00, '2019-05-15', '2019-06-30')
-(4, 'Local church parish', 'charity', 500.00, '2019-01-01', '2019-03-01')
-(5, 'Mission trip to Guatemala', 'books', 1500.00, '2020-02-20', '2020-03-20')
-(6, 'Animal shelter needs food', 'charity', 250.00, '2020-06-30', '2020-07-30')
-(7, 'Human Rights Campaign', 'charity', 300.00, '2019-07-04', '2019-08-04')
-(8, 'Actors Fund', 'charity', 5000.00, '2020-04-01', '2020-07-01')
-(9, 'LGBTQ Rights', 'books', 500.00, '2019-03-10', '2019-06-10')
+(1, 'Help buy equiptment for props', 'music', 200.00, '2019-05-01', '2019-06-01'),
+(2, 'Help local band make video', 'music', 500.00, '2020-09-01', '2020-10-01'),
+(3, 'Music students need mics', 'music', 1000.00, '2019-05-15', '2019-06-30'),
+(4, 'Local church parish', 'charity', 500.00, '2019-01-01', '2019-03-01'),
+(5, 'Mission trip to Guatemala', 'books', 1500.00, '2020-02-20', '2020-03-20'),
+(6, 'Animal shelter needs food', 'charity', 250.00, '2020-06-30', '2020-07-30'),
+(7, 'Human Rights Campaign', 'charity', 300.00, '2019-07-04', '2019-08-04'),
+(8, 'Actors Fund', 'charity', 5000.00, '2020-04-01', '2020-07-01'),
+(9, 'LGBTQ Rights', 'books', 500.00, '2019-03-10', '2019-06-10'),
 (10, 'Music books for classes', 'music', 250.00, '2020-03-25', '2020-04-25');
 
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES
