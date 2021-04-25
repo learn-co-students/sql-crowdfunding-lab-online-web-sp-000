@@ -1,4 +1,4 @@
-# Write your sql queries in this file in the appropriate method like the example below:
+require 'pry' # Write your sql queries in this file in the appropriate method like the example below:
 #
 # def select_category_from_projects
 # "SELECT category FROM projects;"
@@ -6,26 +6,38 @@
 
 # Make sure each ruby method returns a string containing a valid SQL statement.
 
+#SELECT column_name(s)
+#FROM table1
+#INNER JOIN table2
+#ON table1.column_name = table2.column_name;
+
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
-  "Write your SQL query Here"
+# "SELECT title, pledges.amount FROM projects INNER JOIN projects ON pledges.id = projects.id ORDER BY projects.title ASC;"
+"SELECT projects.title, SUM(pledges.amount) from projects JOIN pledges ON projects.id = pledges.project_id GROUP BY projects.title;"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
-  "Write your SQL query Here"
+  #name and age is within the users table 
+  #amount is within the pledges table 
+  #ORDER BY name 
+  "SELECT users.name,users.age, SUM(pledges.amount) FROM users INNER JOIN pledges ON users.id = pledges.user_id GROUP BY name"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-  "Write your SQL query Here"
+  #title is within the project table 
+  #amount is within the pledges table 
+  #sum of the funding_goal in projects 
+  "SELECT projects.title,(SUM(pledges.amount)-funding_goal) AS goal_fund FROM pledges INNER JOIN projects ON pledges.project_id = projects.id GROUP BY title HAVING goal_fund >= 0"
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_summed_amount
-  "Write your SQL query Here"
+  "SELECT users.name, SUM(pledges.amount) AS sum_pledge_amount FROM pledges INNER JOIN users ON pledges.user_id = users.id GROUP BY name ORDER BY sum_pledge_amount "
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
-  "Write your SQL query Here"
+  "SELECT projects.category, pledges.amount FROM pledges INNER JOIN projects ON pledges.project_id = projects.id WHERE category = 'music'"
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
-  "Write your SQL query Here"
+  "SELECT projects.category,SUM(pledges.amount) FROM projects INNER JOIN pledges ON projects.id = pledges.project_id WHERE category = 'books'"
 end
